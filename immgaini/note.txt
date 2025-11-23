@@ -1,0 +1,55 @@
+
+    <div class="contenitore-immagine">
+      <img src="immgaini/AR stelvio.png">
+      <div class="testo-sovrapposto">
+        NOLEGGIA DA E SOTTO <br>
+        CONSIGLIO <br>
+        DI UN <span class="amico">AMICO</span>. <br>
+      </div>
+      <button onclick="window.location.href='prenota.html';" class="vai">prenota ora </button>
+
+
+.contenitore-immagine {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenitore-immagine img {
+  width: 1600px;
+  border: 5px solid #0f2339;
+  box-shadow: 0 0 5px #6b53b4;
+}
+.testo-sovrapposto {
+  position: absolute;
+  top: 3%;
+  left: 7%;
+  font-family: Verdana;
+  color: #ffffff;
+  font-size: 80px;
+  font-weight: 600;
+  left: 10%;
+  text-shadow: 0px 2px 20px rgba(0, 0, 0, 0.6);
+}
+.amico {
+  color: #0f2339;
+  transition: all 0.3s ease;
+}
+.amico:hover {
+  color: #c9a961;
+}
+.vai {
+  width: 120px;
+  height: 20px;
+  position: absolute;
+  background-color: #fefaf3;
+  border: #4f83ba;
+  border-radius: 10px;
+  box-shadow: #0f2339;
+  transition: all 0.3s ease;
+}
+.vai:hover {
+  color: #c9a961;
+  transform: scale(1.05);
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+
+  </head>
+
+  <body class="sfondo">
+    <nav class="barranavigazione">
+      <div class="nav-container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="immgaini/LOGO.png" >
+          </a>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="chisiamo.html" class="nav-link">Chi Siamo</a></li>
+          <li class="nav-item"><a href="auto.html" class="nav-link">Le Nostre Auto</a></li>
+          <li class="nav-item"><a href="prenota.html" class="nav-link">Prenota</a></li>
+          <li class="nav-item"><a href="contatti.html" class="nav-link">Contatti</a></li>
+        </ul>
+        <div class="menu">
+          <span class="barra</span>
+          <span class="barra"></span>
+          <span class="barra"></span>
+        </div>
+      </div>
+    </nav>
+    <br><br><br>
+
+    <div class="containerPrenota">
+    <h1>Preventivo Noleggio Auto </h1>
+    <form id="moduloNoleggio">
+        <h2>Dati Personali</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+
+        <label for="cognome">Cognome:</label>
+        <input type="text" id="cognome" required>
+
+        <label for="telefono">Numero di Telefono:</label>
+        <input type="text" id="telefono" required>
+
+        <label for="via">Via di Casa:</label>
+        <input type="text" id="via" required>
+        
+        <hr>
+
+        <h2>Dettagli Noleggio</h2>
+        <label for="autoScelta">Scegli una macchina:</label>
+        <select id="autoScelta" required>
+            <option value="">-- Seleziona un'auto --</option>
+            <option value="giulietta">Giulietta (50 €/giorno)</option>
+            <option value="giulia">Giulia (70 €/giorno)</option>
+            <option value="stelvio">Stelvio (100 €/giorno)</option>
+            <option value="mito">MiTo (100 €/giorno)</option>
+            <option value="tonale">Tonale (100 €/giorno)</option>
+            
+        </select>
+
+        <label for="giorni">Numero di giorni:</label>
+        <input type="number" id="giorni" min="1" required>
+
+        <button type="button" onclick="calcolaNoleggio()">Calcola Totale</button>
+    </form>
+
+    <div id="risultato">
+        Il costo totale apparirà qui.
+    </div>
+    
+    <script src="jscript.js"></script>
+  </div>
+
+  </body>
+</html>
